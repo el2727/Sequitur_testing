@@ -1,0 +1,11 @@
+264c264
+<             logLik += accumulator.accumulate(eg, 1.0)
+---
+> 	    logLik += accumulator.accumulate(eg, 1.0)
+726a727
+> 	logLik = 0.0
+730c731,732
+<         except RuntimeError:
+---
+>         except RuntimeError as err:
+> 	    print(err)
